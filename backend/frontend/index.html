@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sportsbook App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🏀 Sportsbook Bet</h1>
+
+  <form id="betForm">
+    <label for="bettorId">Bettor ID:</label>
+    <input type="number" id="bettorId" required>
+
+    <label for="betType">Bet Type:</label>
+    <select id="betType" required>
+      <option value="LakersLine">Lakers Line</option>
+      <option value="ClippersLine">Clippers Line</option>
+      <option value="LakersSpread">Lakers Spread</option>
+      <option value="ClippersSpread">Clippers Spread</option>
+    </select>
+
+    <label for="stake">Stake ($):</label>
+    <input type="number" id="stake" required>
+
+    <button type="submit">Place Bet</button>
+  </form>
+
+  <div id="resultBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
